@@ -1,0 +1,319 @@
+,/
+,/
+Home,/
+Home Page,/
+Newsletter,/newsletter/
+About Us,/information/
+Contact Us,/information/feedback.html
+Careers/Jobs,/company/jobs/
+Site Map,/sitemap.html
+Our Articles,/topics/
+Account/Settings,/custom/
+World Clock,/worldclock/
+Main World Clock,/worldclock/
+Extended World Clock,/worldclock/full.html
+Personal World Clock,/worldclock/personal.html
+World Time Lookup ,/worldclock/search.html
+UTC Time,/worldclock/timezone/utc
+Time Zones,/time/
+Time Zones Home,/time
+Time Zone Converter,/worldclock/converter.html
+International Meeting Planner,/worldclock/meeting.html
+Event Time Announcer,/worldclock/fixedform.html
+Time Zone Map,/time/map/
+Time Zone Abbreviations,/time/zones/
+Daylight Saving Time,/time/dst/
+Time Changes Worldwide,/time/change/
+Time Difference,/time/difference/
+Time Zone News,/news/time/
+Calendar,/calendar/
+Calendars Home,/calendar/info.html
+Calendar 2023,/calendar/
+Calendar 2024,/calendar/?year=2024
+Monthly Calendar,/calendar/monthly.html
+Printable Calendar (PDF),/calendar/create.html
+Add Your Own Calendar Events,/calendar/events/
+Calendar Creator,/calendar/basic.html
+Advanced Calendar Creator,/calendar/custommenu.html
+Holidays Worldwide,/holidays/
+On This Day in History,/on-this-day/
+Months of the Year,/calendar/months/
+Days of the Week,/calendar/days/
+About Leap Years,/date/leapyear.html
+Weather,/weather/
+Worldwide,/weather/
+Local Weather,/scripts/go.php
+2-Week Forecast,/scripts/goweather.php?type=ext
+Hour-by-Hour,/scripts/go.php?type=hourly
+Past Week,/scripts/go.php?type=historic
+Climate,/scripts/go.php?type=climate
+Sun & Moon,/astronomy/
+Sun & Moon Home,/astronomy
+Sun Calculator,/sun/
+Moon Calculator,/moon/
+Moon Phases,/moon/phases/
+Night Sky,/astronomy/night/
+Meteor Showers,/astronomy/meteor-shower/
+Day and Night Map,/worldclock/sunearth.html
+Moon Light World Map,/astronomy/moon/light.html
+Eclipses,/eclipse/
+Live Streams,/live/
+Seasons,/calendar/seasons.html
+Astronomy News,/news/astronomy/
+Timers,/counters/
+Timers Home,/counters
+Stopwatch,/stopwatch/
+Timer,/timer/
+Countdown to Any Date,/countdown/create
+Easter Countdown,/countdown/easter
+Eclipse Countdown,/countdown/eclipse
+Summer Countdown,/countdown/summer
+New Year Countdown,/countdown/newyear
+Calculators,/date/
+Calculators Home,/date/
+Date to Date Calculator (duration),/date/duration.html
+Business Date to Date (exclude holidays),/date/workdays.html
+Date Calculator (add / subtract),/date/dateadd.html
+Business Date (exclude holidays),/date/weekdayadd.html
+Weekday Calculator,/date/weekday.html
+Week Number Calculator,/date/weeknumber.html
+Roman Numeral Converter,/date/roman-calculator.html
+Distance Calculator,/worldclock/distance.html
+Apps & API,/extra/
+iOS Apps,/ios/
+Android Apps,/android/
+Free Clock,/clocks/free.html
+Free Countdown,/clocks/freecountdown.html
+API for Developers,/services/api/
+Free Fun,/fun/
+Free & Fun Home,/fun
+Free Clock for Your Site,/clocks/free.html
+Free Countdown for Your Site,/clocks/freecountdown.html
+Word Clock,/wordclock/
+Fun Holidays,/holidays/fun/
+Alternative Age Calculator,/date/birthday.html
+Date Pattern Calculator,/date/pattern.html
+Fun Fact Articles,/topics/fun
+My Account,/custom/
+My Account,/custom
+My Location,/custom/location.html
+My Units,/custom/site.html
+My Events,/calendar/events/
+My World Clock,/worldclock/personal.html
+My Privacy,/custom/privacy.html
+Paid Services,/services/
+Sign in,/custom/login.html
+Register,/custom/create.html
+Home,/
+edit,/worldclock/personal.html
+,/weather/uk/great-yarmouth
+Great Yarmouth,/weather/uk/great-yarmouth
+,/weather/usa/new-york
+New York,/weather/usa/new-york
+,/weather/uk/london
+London,/weather/uk/london
+,/weather/japan/tokyo
+Tokyo,/weather/japan/tokyo
+World Clock,/worldclock/
+Africa,/weather/?continent=africa
+North America,/weather/?continent=namerica
+South America,/weather/?continent=samerica
+Asia,/weather/?continent=asia
+Australia/Pacific,/weather/?continent=australasia
+Europe,/weather/?continent=europe
+Capitals,/weather/?sort=1&low=c
+Accra,/weather/ghana/accra
+Dublin,/weather/ireland/dublin
+Nairobi,/weather/kenya/nairobi
+Addis Ababa,/weather/ethiopia/addis-ababa
+Edmonton,/weather/canada/edmonton
+Nassau,/weather/bahamas/nassau
+Adelaide,/weather/australia/adelaide
+Frankfurt,/weather/germany/frankfurt
+New Delhi,/weather/india/new-delhi
+Algiers,/weather/algeria/algiers
+Guatemala City,/weather/guatemala/guatemala
+New Orleans,/weather/usa/new-orleans
+Almaty,/weather/kazakstan/almaty
+Halifax,/weather/canada/halifax
+New York,/weather/usa/new-york
+Amman,/weather/jordan/amman
+Hanoi,/weather/vietnam/hanoi
+Oslo,/weather/norway/oslo
+Amsterdam,/weather/netherlands/amsterdam
+Harare,/weather/zimbabwe/harare
+Ottawa,/weather/canada/ottawa
+Anadyr,/weather/russia/anadyr
+Havana,/weather/cuba/havana
+Paris,/weather/france/paris
+Anchorage,/weather/usa/anchorage
+Helsinki,/weather/finland/helsinki
+Perth,/weather/australia/perth
+Ankara,/weather/turkey/ankara
+Hong Kong,/weather/hong-kong/hong-kong
+Philadelphia,/weather/usa/philadelphia
+Antananarivo,/weather/madagascar/antananarivo
+Honolulu,/weather/usa/honolulu
+Phoenix,/weather/usa/phoenix
+Asuncion,/weather/paraguay/asuncion
+Houston,/weather/usa/houston
+Prague,/weather/czech-republic/prague
+Athens,/weather/greece/athens
+Indianapolis,/weather/usa/indianapolis
+Reykjavik,/weather/iceland/reykjavik
+Atlanta,/weather/usa/atlanta
+Islamabad,/weather/pakistan/islamabad
+Rio de Janeiro,/weather/brazil/rio-de-janeiro
+Auckland,/weather/new-zealand/auckland
+Istanbul,/weather/turkey/istanbul
+Riyadh,/weather/saudi-arabia/riyadh
+Baghdad,/weather/iraq/baghdad
+Jakarta,/weather/indonesia/jakarta
+Rome,/weather/italy/rome
+Bangkok,/weather/thailand/bangkok
+Jerusalem,/weather/israel/jerusalem
+Salt Lake City,/weather/usa/salt-lake-city
+Barcelona,/weather/spain/barcelona
+Johannesburg,/weather/south-africa/johannesburg
+San Francisco,/weather/usa/san-francisco
+Beijing,/weather/china/beijing
+Karachi,/weather/pakistan/karachi
+San Juan,/weather/puerto-rico/san-juan
+Beirut,/weather/lebanon/beirut
+Kathmandu,/weather/nepal/kathmandu
+San Salvador,/weather/el-salvador/san-salvador
+Belgrade,/weather/serbia/belgrade
+Kingston,/weather/jamaica/kingston
+Santiago,/weather/chile/santiago
+Bengaluru,/weather/india/bengaluru
+Kinshasa,/weather/congo-demrep/kinshasa
+Santo Domingo,/weather/dominican-republic/santo-domingo
+Berlin,/weather/germany/berlin
+Kiritimati,/weather/kiribati/kiritimati
+São Paulo,/weather/brazil/sao-paulo
+Bogota,/weather/colombia/bogota
+Kolkata,/weather/india/kolkata
+Seattle,/weather/usa/seattle
+Boston,/weather/usa/boston
+Kuala Lumpur,/weather/malaysia/kuala-lumpur
+Seoul,/weather/south-korea/seoul
+Brasilia,/weather/brazil/brasilia
+Kuwait City,/weather/kuwait/kuwait-city
+Shanghai,/weather/china/shanghai
+Brisbane,/weather/australia/brisbane
+Kyiv,/weather/ukraine/kyiv
+Singapore,/weather/singapore/singapore
+Brussels,/weather/belgium/brussels
+La Paz,/weather/bolivia/la-paz
+Sofia,/weather/bulgaria/sofia
+Bucharest,/weather/romania/bucharest
+Lagos,/weather/nigeria/lagos
+St. John's,/weather/canada/st-johns
+Budapest,/weather/hungary/budapest
+Lahore,/weather/pakistan/lahore
+Stockholm,/weather/sweden/stockholm
+Buenos Aires,/weather/argentina/buenos-aires
+Las Vegas,/weather/usa/las-vegas
+Suva,/weather/fiji/suva
+Cairo,/weather/egypt/cairo
+Lima,/weather/peru/lima
+Sydney,/weather/australia/sydney
+Calgary,/weather/canada/calgary
+Lisbon,/weather/portugal/lisbon
+Taipei,/weather/taiwan/taipei
+Canberra,/weather/australia/canberra
+London,/weather/uk/london
+Tallinn,/weather/estonia/tallinn
+Cape Town,/weather/south-africa/cape-town
+Los Angeles,/weather/usa/los-angeles
+Tashkent,/weather/uzbekistan/tashkent
+Caracas,/weather/venezuela/caracas
+Madrid,/weather/spain/madrid
+Tegucigalpa,/weather/honduras/tegucigalpa
+Casablanca,/weather/morocco/casablanca
+Managua,/weather/nicaragua/managua
+Tehran,/weather/iran/tehran
+Chicago,/weather/usa/chicago
+Manila,/weather/philippines/manila
+Tokyo,/weather/japan/tokyo
+Copenhagen,/weather/denmark/copenhagen
+Melbourne,/weather/australia/melbourne
+Toronto,/weather/canada/toronto
+Dallas,/weather/usa/dallas
+Mexico City,/weather/mexico/mexico-city
+Vancouver,/weather/canada/vancouver
+Dar es Salaam,/weather/tanzania/dar-es-salaam
+Miami,/weather/usa/miami
+Vienna,/weather/austria/vienna
+Darwin,/weather/australia/darwin
+Minneapolis,/weather/usa/minneapolis
+Warsaw,/weather/poland/warsaw
+Denver,/weather/usa/denver
+Minsk,/weather/belarus/minsk
+Washington DC,/weather/usa/washington-dc
+Detroit,/weather/usa/detroit
+Montevideo,/weather/uruguay/montevideo
+Winnipeg,/weather/canada/winnipeg
+Dhaka,/weather/bangladesh/dhaka
+Montréal,/weather/canada/montreal
+Yangon,/weather/myanmar/yangon
+Doha,/weather/qatar/doha
+Moscow,/weather/russia/moscow
+Zagreb,/weather/croatia/zagreb
+Dubai,/weather/united-arab-emirates/dubai
+Mumbai,/weather/india/mumbai
+Zürich,/weather/switzerland/zurich
+Daylight Saving Time,/time/dst/
+Coordinated Universal Time,/time/aboututc.html
+Greenwich Mean Time,/time/gmt-utc-time.html
+Great Britain/United Kingdom is one hour ahead of UTC during summer.,/time/united-kingdom-bst.html
+Weather words and terminology,/weather/glossary.html
+About the Temperature Readings,/weather/daily-temperature-readings.html
+Accuracy of Weather Forecasts,/weather/forecast-accuracy-time.html
+Frequency of Weather Reports,/weather/report-frequency.html
+Time Zone Map,/time/map/
+Personal World Clock,/worldclock/personal.html
+Time Zone Converter,/worldclock/converter.html
+Meeting Planner,/worldclock/meeting.html
+Event Time Announcer,/worldclock/fixedform.html
+,#
+"
+",#
+"Contact Us 
+",/information/feedback.html
+"
+
+",/services/supporter.html
+"
+  Love Our Site? Become a Supporter
+  ",/services/supporter.html
+,/
+© Time and Date AS 1995–2023,/information/copyright.html
+About us,/company/
+Careers/Jobs,/company/jobs
+Contact Us,/information/feedback.html
+Contact Details,/information/contact.html
+Sitemap,/sitemap.html
+Newsletter,/newsletter/
+Link policy,/information/copyright.html
+Advertising,/information/advertising.html
+Disclaimer,/information/disclaimer.html
+Terms & Conditions,/information/terms-conditions.html
+Privacy Policy,/information/privacy.html
+My Privacy,/custom/privacy.html
+World Clock,/worldclock/
+Time Zones,/time/
+Calendar,/calendar/
+Weather,/weather/
+Sun & Moon,/astronomy/
+Timers,/counters/
+Calculators,/date/
+API,/services/api/
+timeanddate.no,https://www.timeanddate.no
+timeanddate.de,https://www.timeanddate.de
+,https://www.facebook.com/timeanddate/
+,https://twitter.com/timeanddate
+,https://www.linkedin.com/company/time-and-date-as/about/
+,https://www.instagram.com/timeanddatecom/
+,https://www.youtube.com/c/timeanddate
+Privacy & Terms,/information/copyright.html
