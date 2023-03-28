@@ -3,7 +3,7 @@ This tutorial was created using Python 3 and the BeautifulSoup library.
 
 It demonstrates how to web scrape links and headers from a website in a step-by-step format.
 
-## Dependencies
+## Prerequisites
 This tutorial requires the following Python libraries:
 
 **requests**
@@ -37,5 +37,7 @@ By default, the script extracts all links from the URL 'https://www.timeanddate.
 If you want to scrape a different URL or save the links to a different file name, modify the url and with open('links.csv', 'w') as file lines in the script accordingly.
 
 ## Notes
-I created a tutorial on web scraping by adding extra comments to my code. My goal was to provide a step-by-step guide that would make it easy for readers to understand how to scrape links and headers from a website. By being concise and clear in my explanations, I aimed to create a tutorial that would be accessible to both beginners and experienced developers. 
+I created a tutorial on web scraping by adding extra comments to my code. 
+My goal was to provide a step-by-step guide that would make it easy for readers to understand how to scrape links and headers from a website. 
+By being concise and clear in my explanations, I aimed to create a tutorial that would be accessible to both beginners and experienced developers. 
 
