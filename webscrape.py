@@ -21,9 +21,12 @@ else:
 from bs4 import BeautifulSoup 
 soup = BeautifulSoup(html_content, 'html.parser')
 
- # Find all links on the page 
+ # Find all links on the page: 
+
 links = soup.find_all('a') 
-# Find the text of the first heading on the page
+
+# Find the text of the first heading on the page:
+
 heading = soup.find('h1').text 
 
 # In the above code, we create a BeautifulSoup object from the HTML content using the 'html.parser' parser.
@@ -35,8 +38,11 @@ heading = soup.find('h1').text
 # Here's an example:
 
 # Get the href attribute of the first link on the page
+
 first_link = links[0].get('href') 
-# Print the text of all the links on the page 
+
+# Print the text of all the links on the page:
+
 for link in links: 
    print(link.text) 
 
@@ -44,12 +50,14 @@ for link in links:
 
 # We also use a for loop to print the text of all the links on the page.
 
-# Finfallu save the Data, you can save the data you've scraped to a file or database. 
+# Finally save the Data, you can save the data you've scraped to a file or database. 
 
 # Here's an example:
 
 import csv 
-# Save the links to a CSV file 
+
+# Save the links to a CSV file:
+
 with open('links.csv', 'w') as file: 
    writer = csv.writer(file) 
    for link in links:
