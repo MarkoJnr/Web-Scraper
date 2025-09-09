@@ -1,68 +1,110 @@
+# Import the libraries we need:
+# - requests: to download web pages
+# - BeautifulSoup: to extract useful information from HTML
+# - csv: to save our data into a CSV file
+# - sys: to handle command-line arguments (like giving the program a URL)
 import requests
+from bs4 import BeautifulSoup
+import csv
+import sys
 
-# Send a Request to the Website To retrieve the HTML content of a web page, you need to send an HTTP request to its URL using the requests library. 
+def fetch_html(url: str) -> bytes:
+    """
+    Download the HTML code from a web page.
+    Returns the page content if successful, or None if something goes wrong.
+    """
+    try:
+        # Send a GET request (like typing a URL into your browser)
+        response = requests.get(url, timeout=10)
 
-url = 'https://www.timeanddate.com/weather/'
-response = requests.get(url)
+        # This will throw an error if the status code is not 200 (OK)
+        response.raise_for_status()
 
-# In the above code, we send a GET request to the URL 'https://www.example.com' using the requests.get() method. 
+        # Return the page content (HTML)
+        return response.content
 
-if response.status_code == 200:
-    html_content = response.content
-else:
-    print(f'Request failed with status code {response.status_code}')
+    except requests.RequestException as e:
+        # If anything goes wrong (like network issues or invalid URL), print an error
+        print(f"Error fetching {url}: {e}", file=sys.stderr)
+        return None
 
-# If the request is successful (i.e., status code 200), we store the HTML content in the html_content variable.
+def parse_links(html: bytes):
+    """
+    Look inside the HTML and find:
+    - The first <h1> heading (main title of the page)
+    - All the <a> links on the page
+    Returns both the heading and a list of links.
+    """
+    # Create a BeautifulSoup object so we can search the HTML easily
+    soup = BeautifulSoup(html, "html.parser")
 
-# Parse the HTML Content Next, we need to parse the HTML content to extract the data we want. We can do this using the BeautifulSoup library.
- 
-# Here's an example:
+    # Find the first <h1> heading on the page (if it exists)
+    heading = soup.find("h1").text.strip() if soup.find("h1") else "No heading found"
 
-from bs4 import BeautifulSoup 
-soup = BeautifulSoup(html_content, 'html.parser')
+    # Find all <a> tags (links) on the page
+    # For each link, get the visible text and the URL (href attribute)
+    links = [(a.text.strip(), a.get("href")) for a in soup.find_all("a")]
 
- # Find all links on the page: 
+    return heading, links
 
-links = soup.find_all('a') 
+def save_links_to_csv(links, filename="links.csv"):
+    """
+    Save all the links into a CSV file so we can use them later.
+    Each row will have:
+    - The text of the link
+    - The URL (href)
+    """
+    with open(filename, "w", newline="", encoding="utf-8") as f:
+        writer = csv.writer(f)
 
-# Find the text of the first heading on the page:
+        # Write the header row first
+        writer.writerow(["Link Text", "URL"])
 
-heading = soup.find('h1').text 
+        # Write each link as a new row
+        writer.writerows(links)
 
-# In the above code, we create a BeautifulSoup object from the HTML content using the 'html.parser' parser.
+    print(f"✅ Saved {len(links)} links to {filename}")
 
-# We can then use the soup.find_all() method to find all the links on the page, or the soup.find() method to find the first occurrence of a particular HTML element (in this case, the first h1 heading).
+def main():
+    """
+    Main function that runs when you start the program.
+    1. Chooses which URL to scrape
+    2. Downloads the HTML
+    3. Finds the heading and links
+    4. Prints a preview
+    5. Saves everything to a CSV file
+    """
 
-# Extract the Data you want once you have the HTML elements containing the data you want, you can extract the data itself. 
+    # Default website (the one in your example)
+    url = "https://www.timeanddate.com/weather/"
 
-# Here's an example:
+    # If the user gives us a URL in the terminal, use that instead
+    # Example: py scraper.py https://www.python.org
+    if len(sys.argv) > 1:
+        url = sys.argv[1]
 
-# Get the href attribute of the first link on the page
+    print(f"🔎 Fetching data from: {url}")
 
-first_link = links[0].get('href') 
+    # Step 1: Download the page
+    html = fetch_html(url)
+    if not html:
+        return  # Stop if download failed
 
-# Print the text of all the links on the page:
+    # Step 2: Extract heading and links
+    heading, links = parse_links(html)
 
-for link in links: 
-   print(link.text) 
+    # Step 3: Show a preview in the terminal
+    print(f"\n📌 Page heading: {heading}")
+    print(f"🔗 Found {len(links)} links\n")
 
-# In the above code, we use the get() method to extract the href attribute of the first link on the page. 
+    # Show the first 10 links so we don’t flood the screen
+    for text, href in links[:10]:
+        print(f"- {text} ({href})")
 
-# We also use a for loop to print the text of all the links on the page.
+    # Step 4: Save all links to a CSV file
+    save_links_to_csv(links)
 
-# Finally save the Data, you can save the data you've scraped to a file or database. 
-
-# Here's an example:
-
-import csv 
-
-# Save the links to a CSV file:
-
-with open('links.csv', 'w') as file: 
-   writer = csv.writer(file) 
-   for link in links:
-    writer.writerow([link.text, link.get('href')]) 
-
-# In the above code, we use the csv module to save the links to a CSV file. 
-
-# We open the file in write mode using a with statement, create a csv.writer object, and use a for loop to write each link's text and href attribute to a new row in the file.
+# This makes sure main() only runs if we start this file directly
+# (not if we import it into another program)
+if __name__ == "__main__":
+    main()
