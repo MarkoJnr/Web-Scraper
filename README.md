@@ -1,43 +1,81 @@
 ## Web Scraping Tutorial
-This tutorial was created using Python 3 and the BeautifulSoup library. 
+This tutorial demonstrates how to scrape links and headers from a website using Python 3 and the BeautifulSoup library.
+It is written step by step so beginners can follow along.
 
-It demonstrates how to web scrape links and headers from a website in a step-by-step format.
+##  Prerequisites
+You need Python installed, plus these libraries:
 
-## Prerequisites
-This tutorial requires the following Python libraries:
+**requests** (for fetching web pages)
+**beautifulsoup4** (for parsing HTML)
 
-**requests**
-**BeautifulSoup**
+Install them with pip:
 
-You can install these libraries using pip. Simply run the following command:
-
-**pip install requests beautifulsoup4**
+pip install requests beautifulsoup4
 
 ## Getting Started
 
-To get started with this tutorial, open your preferred text editor or Python interpreter and create a new Python file.
+Open your preferred text editor or IDE (e.g., VS Code, PyCharm, or IDLE).
 
-Copy and paste the code provided in the tutorial into your file. Make sure to save your file with a .py extension.
+Create a new Python file (e.g., webscrape.py).
+
+Copy the code from this tutorial into your file.
+
+Save it with a .py extension.
 
 ## How it Works
 
-The tutorial begins by using the requests library to send a GET request to a website URL. The HTML content of the website is then retrieved and stored in a variable.
+The script uses **requests** to send a GET request to a website and download its HTML content.
 
-Next, the BeautifulSoup library is used to parse the HTML content and extract the links and headers from the website.
+BeautifulSoup parses the HTML and extracts:
 
-Finally, the extracted data is saved to a CSV file using the csv library.
+The main heading (<h1> tag)
+
+All the links (<a> tags)
+
+The results are:
+
+Printed in the terminal
+
+Saved to a CSV file using the csv module.
 
 ## How to Use
-To use this tutorial, simply run the Python file in your preferred Python interpreter. 
 
-The links and headers of the website will be printed to the console and saved to a CSV file in the same directory as your Python file.
+Run the script from your terminal:
 
-By default, the script extracts all links from the URL 'https://www.timeanddate.com/weather/' and saves them to a CSV file named 'links.csv'. 
+**python webscrape.py**
 
-If you want to scrape a different URL or save the links to a different file name, modify the url and with open('links.csv', 'w') as file lines in the script accordingly.
+
+By default, the script scrapes from:
+
+https://www.timeanddate.com/weather/
+
+## Scraping a Different Website
+
+You can scrape any other website by doing the following:
+
+Change the url inside the script
+Open webscrape.py and edit this line:
+
+url = "https://www.timeanddate.com/weather/"
+
+
+Without editing the script, you can also provide the URL directly when running:
+
+python webscrape.py https://www.python.org
+
+
+This will scrape links and headings from the Python homepage instead of the default site.
+
+## Customization
+
+Save to a different file:
+Edit this line in the script:
+
+with open('links.csv', 'w') as file:
+Replace 'links.csv' with another filename (e.g., "new_links.csv").
 
 ## Notes
-I created a tutorial on web scraping by adding extra comments to my code. 
-My goal was to provide a step-by-step guide that would make it easy for readers to understand how to scrape links and headers from a website. 
-By being concise and clear in my explanations, I aimed to create a tutorial that would be accessible to both beginners and experienced developers. 
 
+This tutorial was written to help beginners learn the basics of web scraping.
+The code includes extra comments to explain each step clearly.
+The aim is to provide a guide that’s both accessible for beginners and useful for experienced developers.
