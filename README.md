@@ -73,7 +73,6 @@ with open('links.csv', 'w') as file:
 Replace 'links.csv' with another filename (e.g., "new_links.csv").
 
 ## Notes
-
 This tutorial was written to help beginners learn the basics of web scraping.
 The code includes extra comments to explain each step clearly.
 The aim is to provide a guide that’s both accessible for beginners and useful for experienced developers.
