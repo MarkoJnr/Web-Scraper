@@ -63,7 +63,7 @@ def save_links_to_csv(links, filename="links.csv"):
         # Write each link as a new row
         writer.writerows(links)
 
-    print(f"✅ Saved {len(links)} links to {filename}")
+    print(f"[SEARCH] Fetching data from: {url}")
 
 def main():
     """
