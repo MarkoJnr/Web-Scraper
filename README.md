@@ -28,13 +28,13 @@ The script uses **requests** to send a GET request to a website and download its
 
 BeautifulSoup parses the HTML and extracts:
 
-The main heading (<h1> tag)
-All the links (<a> tags)
+BeautifulSoup parses the HTML and extracts:  
+- The main heading (`<h1>` tag)  
+- All the links (`<a>` tags)  
 
-The results are:
-Printed in the terminal
-
-Saved to a CSV file using the csv module.
+The results are:  
+- Printed in the terminal  
+- Saved to a CSV file using the `csv` module  
 
 ## How to Use
 
@@ -77,3 +77,6 @@ Replace 'links.csv' with another filename (e.g., "new_links.csv").
 This tutorial was written to help beginners learn the basics of web scraping.
 The code includes extra comments to explain each step clearly.
 The aim is to provide a guide that’s both accessible for beginners and useful for experienced developers.
+
+
+
