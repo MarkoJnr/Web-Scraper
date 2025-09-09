@@ -29,11 +29,9 @@ The script uses **requests** to send a GET request to a website and download its
 BeautifulSoup parses the HTML and extracts:
 
 The main heading (<h1> tag)
-
 All the links (<a> tags)
 
 The results are:
-
 Printed in the terminal
 
 Saved to a CSV file using the csv module.
